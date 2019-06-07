@@ -1,3 +1,12 @@
+.button-animation {
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.button-animation:hover {
+  background-color: #F6F6F6;
+  color: black;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -313,12 +322,26 @@ footer {
   padding: 1rem;
   border-radius: 5px;
   font-weight: bold;
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F6F6;
+  color: black;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     width: 100%;
     padding: 25px;
     margin-bottom: 20px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+  }
+  .home .walk .walk-text .btn:hover {
+    background-color: #F6F6F6;
+    color: black;
   }
 }
 .home .walk .walk-img {

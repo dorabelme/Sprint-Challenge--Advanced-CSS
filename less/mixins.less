@@ -18,3 +18,15 @@
     padding: 1rem;
     border-radius: @border-radius;
 }
+
+
+
+.button-animation {
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    &:hover {
+        background-color: @wild-sand;
+        color: black;
+    }
+}
