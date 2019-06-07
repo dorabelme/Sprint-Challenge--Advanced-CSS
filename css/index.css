@@ -7,6 +7,15 @@
   background-color: #F6F6F6;
   color: black;
 }
+.fixed {
+  position: fixed;
+}
+.fixed:hover {
+  background-color: #23293B;
+}
+.hover:hover {
+  color: white;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -174,6 +183,10 @@ p {
   height: 90px;
   background: #F6F6F6;
   border: 2px solid #F1F1F1;
+  position: fixed;
+}
+.main-navigation:hover {
+  background-color: #23293B;
 }
 @media (max-width: 500px) {
   .main-navigation {
@@ -192,6 +205,9 @@ p {
   font-size: 4rem;
   color: #454A59;
   letter-spacing: 0.1px;
+}
+.main-navigation .nav-container .logo:hover {
+  color: white;
 }
 @media (max-width: 500px) {
   .main-navigation .nav-container .logo {
@@ -215,6 +231,9 @@ p {
   text-decoration: none;
   padding-bottom: 1rem;
 }
+.main-navigation .nav-container .nav a:hover {
+  color: white;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -227,6 +246,7 @@ footer {
 }
 .home .intro .main-header {
   border-radius: 10px;
+  margin-top: 90px;
 }
 @media (max-width: 500px) {
   .home .intro .main-header {
