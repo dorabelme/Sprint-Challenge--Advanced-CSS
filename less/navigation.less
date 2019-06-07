@@ -6,25 +6,29 @@
     background: @nav-bg;
     border: 2px solid @nav-border;
 
+    @media @mobile {
+      width: 100%;
+    }
+
     .nav-container {
       height: 100%;
       .flex(column, space-between, center);
       padding-top: 0.5rem;
   
-      @media @mobile {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 10px;
-      }
+      // @media @mobile {
+      //   flex-wrap: wrap;
+      //   justify-content: center;
+      //   padding-top: 10px;
+      // }
   
       .logo {
         font-size: 4rem;
         color: @nav-font;
         letter-spacing: 0.1px;
 
-        // @media @mobile {
-        //   font-size: 3rem;
-        // }
+        @media @mobile {
+          padding-bottom: 2rem;
+        }
       }
   
       .nav {
@@ -32,10 +36,10 @@
         display: flex;
         justify-content: space-evenly;
   
-        // @media @mobile {
-        //   width: 100%;
-        //   justify-content: space-around;
-        // }
+        @media @mobile {
+          width: 75%;
+          justify-content: space-around;
+        }
         
         
         a {
