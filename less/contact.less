@@ -1,0 +1,63 @@
+.contact {
+  .flex(row, center, center);
+  flex-wrap: wrap;
+  background-color: #fafafa;
+  padding: 2rem;
+  border: 0.5px solid grey;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  width: 100%;
+  border-radius: 10px;
+  @media @phone {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    width: 100%;
+  }
+  .contact-box {
+    width: 100%;
+    .flex(row, space-between, center);
+  }
+
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    .button-style(100%, @ebony-clay, @wild-sand, 18px, 5px);
+    .button-animation;
+    margin: 20px auto;
+  }
+
+  .name,
+  .email,
+  .package {
+    font-size: 1.5rem;
+    margin: 20px;
+    width: 100px;
+  }
+}
+.header {
+  @media @phone {
+    padding-left: 2rem;
+
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .subscription {
+    @media @phone {
+      margin-top: 3rem;
+    }
+  }
+}

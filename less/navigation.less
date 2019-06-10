@@ -1,1 +1,55 @@
 // Navigation code here
+
+.main-navigation {
+  width: 100%;
+  height: 90px;
+  background: @nav-bg;
+  border: 2px solid @nav-border;
+  .fixed;
+
+  @media @phone {
+    width: 100%;
+  }
+
+  .nav-container {
+    height: 100%;
+    .flex(column, space-between, center);
+    padding-top: 0.5rem;
+
+    // @media @mobile {
+    //   flex-wrap: wrap;
+    //   justify-content: center;
+    //   padding-top: 10px;
+    // }
+
+    .logo {
+      font-size: 4rem;
+      color: @nav-font;
+      letter-spacing: 0.1px;
+      .hover;
+
+      @media @phone {
+        padding-bottom: 2rem;
+      }
+    }
+
+    .nav {
+      width: 450px;
+      display: flex;
+      justify-content: space-evenly;
+
+      @media @phone {
+        width: 75%;
+        justify-content: space-around;
+      }
+
+      a {
+        font-size: 1.6rem;
+        color: @nav-font;
+        text-decoration: none;
+        padding-bottom: 1rem;
+        .hover;
+      }
+    }
+  }
+}
